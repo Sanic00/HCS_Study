@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 없는 웹페이지</title>
+    <!-- <style>
+        /*Css의 주석문 */
+        body {
+            background-color: black;
+        }
+
+        h3 {
+            color: aqua;
+        }
+
+        hr {
+            border: 5px solid yellow;
+        }
+
+        span {
+            color: red;
+            font-size: 30px;
+        }
+    </style> -->
+    <!--css 연결할때 link로 해서 연결을 해줘야된다.-->
+    <!-- <link rel="stylesheet" href="../css/CssExam01.css"> -->
+
+    <!-- 스타일 태그안에 @import를 사용해서 끌어올수도 있음 -->
+    <style>
+        @import url(../css/CssExam01.css)
+    </style>
+
+
+</head>
+<!-- 
+@ : 에이트
+'' : 싱글 쿼터
+"" : 더블 쿼터
+* : 에스터리스크 -->
+
+
+<body>
+    <h3>Non Css</h3>
+    <hr>
+    <!-- <p style="color: blueviolet; font-size: 20px;"> -->
+    <!--이렇게 하는건 내부스타일-->
+    <p>
+        나는 <span>Web Proramming</span>을 무지하게 사랑한다
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 모델</title>
+    <style>
+        body {
+            background-color: darksalmon;
+        }
+
+        span {
+            background-color: deepskyblue;
+        }
+
+        .box {
+            background-color: aqua;
+            border-style: solid;
+            border-color: peru;
+
+            margin: 40px;
+            border-width: 40px;
+            padding: 30px;
+        }
+
+        .inner {
+            background-color: yellow;
+            margin: 30px;
+            padding: 20px;
+            border: 5px red;
+            border-style: dotted;
+            border-radius: 10px 50px 100px 150px;
+        }
+
+        p {
+            background: yellow;
+            width: 200px;
+            height: 60px;
+            padding: 10px;
+            border: 20px solid lightgray;
+        }
+
+        #round {
+            border-image: url("../img/border.png") 30 round;
+        }
+
+        #repeat {
+            border-image: url("../img/border.png") 30 repeat;
+        }
+
+        #stretch {
+            border-image: url("../img/border.png") 30 stretch;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box">
+        <span>HELLO CSS</span>
+    </div>
+    <br>
+    <hr>
+    <p>margin 30px, padding 20px, border 5px color red dotted</p>
+    <div class="inner">
+        <img src="../img/elvis.jpg" alt="엘비스">
+    </div>
+    <hr>
+    원본이미지
+    <img src="../img/border.png" alt="원본">
+    <hr>
+    <p>
+        20 X 20 크기의 흰색 테두리를 가진 p태그
+    </p>
+    <p id="round">round 스타일</p>
+    <p id="repeat">repeat 스타일</p>
+    <p id="stretch">stretch 스타일</p>
+</body>
+
+</html>

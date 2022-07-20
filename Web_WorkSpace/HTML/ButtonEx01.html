@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼!</title>
+</head>
+
+<body>
+    <h3>버튼</h3>
+    <hr>
+    <form>
+        검색 : <input type="text" size="10" value="">
+        <input type="button" value="q1"><br>
+        <button type="button">q2</button><br>
+        이미지 버튼 : <input type="image" src=elvis.jpg alt="이미지" width="50" height="20">
+
+    </form>
+    <br>
+    <h3>체크박스</h3>
+    <form action="">
+        짜장면 <input type="checkbox" value="1">
+        짬뽕 <input type="checkbox" value="2">
+        탕수육 <input type="checkbox" value="3">
+        우동 <input type="checkbox" value="4" checked>
+    </form>
+    <br>
+    <h3>라디오 버튼</h3>
+    <form action="">
+        <input type="radio" name="China" value="1" checked>
+        짜장면<img src="" alt="">
+        <input type="radio" name="China" value="2">
+        짬뽕<img src="" alt="">
+        <input type="radio" name="China" value="3">
+        탕수육<img src="" alt="">
+        <input type="radio" name="China" value="4">
+        우동<img src="" alt="">
+    </form>
+    <br>
+    <h3>콤보 박스</h3>
+    <form action="">
+        <select name="china" id="">
+            <option value="1">짜장면</option>
+            <option value="2">짬뽕</option>
+            <option value="3">탕수육</option>
+            <option value="4">우동</option>
+
+        </select>
+
+    </form>
+    <br>
+    <hr>
+    <h3>라벨을 이용한 버튼</h3>
+    <form action="">
+        <label for="">
+            <input type="radio" name="china" value="1">
+            짜장면<img src="" alt="" height="50" width="50"><br>
+        </label>
+        <label for="">
+            <input type="radio" name="china" value="2">
+            짬뽕<img src="" alt="" height="50" width="50"><br>
+        </label>
+        <label for="">
+            <input type="radio" name="china" value="3">
+            탕수육<img src="" alt="" height="50" width="50"><br>
+        </label>
+        <label for="">
+            <input type="radio" name="china" value="4">
+            우동<img src="" alt="" height="50" width="50"><br>
+        </label>
+
+    </form>
+    <br>
+    <hr>
+    <h3>색상 선택기</h3>
+    <hr>
+    <form action="">
+        <input type="color" value="#00BF" onchange="document.body.style.color=this.value">
+    </form>
+
+
+    <br>
+    <hr>
+    <form action="">
+        <pre>
+        month : <input type="month" value="2022-07"><br>
+        time : <input type="time" value="17시50분"><br>
+        local : <input type="datetime-local" value="2022-07-14T17:46:10.33"><br>
+        </pre>
+    </form>
+
+</body>
+
+</html>

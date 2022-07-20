@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜(내장객체)</title>
+    <script>
+        // 현재 요일을 출력
+        var days = ["일", "월", "화", "수", "목", "금", "토"];
+
+
+        var mydate = new Date();
+        var yy = mydate.getFullYear(); // 연월일 시분 초 까지 리턴해주는 메소드 
+
+        var mm = mydate.getMonth() + 1;  //인덱스라서 0부터 시작이라서 +1을 시켜줘야됨
+        var dd = mydate.getDate();
+
+        var i = mydate.getDay();
+        var day = days[i];
+
+        var hh = mydate.getHours();
+        var mi = mydate.getMinutes();
+        var ss = mydate.getSeconds();
+
+        var result = yy + "-" + mm + "-" + dd + "-" + day + "요일" + hh + ":" + mi + ":" + ss;
+
+        document.write("<h1>" + result + "</h1>");
+
+
+        //임의의 날짜로 지정
+        // mydate.setFullYear(2025);
+        // mydate.setMonth(6); //7월이지만 인덱스번호는 6임
+        // mydate.setDate(12);
+        // mydate.setHours(6);
+        // mydate.setMinutes(56);
+        // mydate.setSeconds(22);
+
+
+        // 두 날짜의 차이 
+        var theday = new Date(2022, 0, 1);
+        var today = new Date(); //날짜 객체 생성
+
+        var cnt = today.getTime() - theday.getTime();
+        var dday = Math.floor(cnt / (24 * 60 * 60 * 1000));
+
+        document.write("<h1>올해는" + dday + "일 지났습니다</h1>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

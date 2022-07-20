@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 그림자 효과</title>
+    <style>
+        div {
+            font: normal 24px verdana;
+        }
+
+        .dropText {
+            text-shadow: 3px 3px;
+            /*왼쪽부터 가로(행) 세로(열)*/
+        }
+
+        .redText {
+            text-shadow: 3px 3px red;
+        }
+
+        .blurText {
+            text-shadow: 3px 3px 5px blue;
+            /* 왼쪽부터 가로 세로 번짐  */
+        }
+
+        .glowEffect {
+            text-shadow: 0px 0px 3px red;
+        }
+
+        .wordArtEffect {
+            color: white;
+            text-shadow: 0px 0px 3px darkblue;
+        }
+
+        .threeDEffect {
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .multiEffect {
+            color: yellow;
+            text-shadow: 2px 2px 2px black,
+                0px 0px 25px blueviolet,
+                0px 0px 5px red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>텍스트 그림자 만들기</h3>
+    <hr>
+    <div class="dropText">Drop Shadow</div>
+    <div class="redText">Color Shadow</div>
+    <div class="blurText">Blur Shadow</div>
+    <div class="glowEffect">Glow Shadow</div>
+    <div class="wordArtEffect">WordArt Shadow</div>
+    <div class="threeDEffect">3D Shadow</div>
+    <div class="multiEffect">Multi Shadow</div>
+
+
+
+
+</body>
+
+</html>

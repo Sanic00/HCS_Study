@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 구조를 가진 표 TABLE</title>
+</head>
+
+<body>
+    <h3>기본 구조를 가진 표만들기</h3>
+    <hr>
+    <table border="1">
+        <caption>성적표</caption>
+        <!--표 테이블의 제목-->
+
+        <thead>
+            <!--테이블의 헤드-->
+            <tr>
+                <th>이름</th>
+                <th>Java</th>
+                <th>DataBase</th>
+            </tr>
+            <!--table row(행)을 의미-->
+        </thead>
+
+        <tbody>
+            <!--테이블 몸통-->
+            <tr>
+                <td>홍길동</td>
+                <td>100</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>김유신</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>나길동</td>
+                <td>55</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>강감찬</td>
+                <td>99</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <!--tfoot의 위치는 어디에도 놔도 똑같다. 알아서 해줌-->
+            <tr>
+                <th>합계</th>
+                <th>350</th>
+                <th>300</th>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>

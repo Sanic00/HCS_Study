@@ -1,0 +1,16 @@
+ body {
+     background-color: black;
+ }
+
+ h3 {
+     color: aqua;
+ }
+
+ hr {
+     border: 5px solid yellow;
+ }
+
+ span {
+     color: red;
+     font-size: 30px;
+ }

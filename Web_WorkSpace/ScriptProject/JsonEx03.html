@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json3</title>
+
+    <script>
+        var keyWord_rank = {
+            "ranking1": { "k": "HTML5", "symbol": "+", "value": "178" }, //r1이라는 키안에 값이 3개나 있따.
+            "ranking2": { "k": "CSS3", "symbol": "new", "value": "150" },
+            "ranking3": { "k": "JQuery", "symbol": "+", "value": "135" }
+
+        };
+
+        var tag = "<h1> 인기 검색어 순위 </h1><ul>";
+
+        tag += "<li>" + keyWord_rank.ranking1.k + "(" + keyWord_rank.ranking1.symbol + keyWord_rank.ranking1.value + ")" + "</li>";
+        tag += "<li>" + keyWord_rank.ranking2.k + "(" + keyWord_rank.ranking2.symbol + keyWord_rank.ranking2.value + ")" + "</li>";
+        tag += "<li>" + keyWord_rank.ranking3.k + "(" + keyWord_rank.ranking3.symbol + keyWord_rank.ranking3.value + ")" + "</li>";
+        // tag +=
+        //     tag +=
+        //ul의 마지막부분을 누적시킴
+        tag += "</ul>";
+
+        document.write(tag);
+
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

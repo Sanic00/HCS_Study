@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var str = "100+1";
+        document.write("<h1>" + str + "</h1>");
+
+
+        var result = eval(str);
+        //eval : 문자열을 수식으로 변환해주는 함수(내장함수) 실무에선 해킹 위험이 큼!!!
+
+        // document.write("<h1>" + result + "</h1>");
+        var value = "100";
+        var num1 = Number(value);
+        // Number() : 문자열 변수가 숫자모양일 경우 실제 숫자형으로 변환시킴
+        var num2 = parseInt(value);
+        //ParseInt() : 문자열 변수가 숫자모양일 경우 실제 숫자형으로 변환시킴
+
+        // var r1 = value + 1;
+        // // 문자열 + 숫자 = 문자열 + 문자열로 바뀐다.
+        // document.write("<h1>" + r1 + "</h1>");
+
+        // var r2 = num1 + 1;
+        // // 숫자  + 숫자
+        // document.write("<h1>" + r2 + "</h1>");
+
+        // var r3 = num2 + 1;
+        // // 숫자  + 숫자
+        // document.write("<h1>" + r3 + "</h1>");
+
+        var valu = "100.6";
+
+        //실수형일때 문자열 그대로 실수값을 리턴함
+        var n1 = Number(valu);
+        //정수형만 취함.
+        var n2 = parseInt(valu);
+
+        var res1 = n1 + 1;
+        var res2 = n2 + 2;
+        document.write("<h1>" + res1 + "</h1>");
+        document.write("<h1>" + res2 + "</h1>");
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+
+
+    <font size=6000%>롯데리아 가실분?</font>
+
+</body>
+
+</html>

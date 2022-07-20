@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>계산기</title>
+    <script>
+        //빈 객체 선언
+        var calc = {};
+
+        //빈 객체의 들어갈 변수 추가
+        calc.x = 0;
+        calc.y = 0;
+
+        //변수에 값을 변경시키기 위한 함수 추가 
+        calc.setValue = function (p1, p2) {
+            this.x = p1;
+            this.y = p2;
+        }
+
+        //변수와 변수를 더해서 결과를 리턴하는 함수
+        calc.plus = function () {
+            return this.x + this.y;
+        }
+
+        calc.minus = function () {
+            return this.x - this.y;
+        }
+
+        calc.mutiple = function () {
+            return this.x * this.y;
+        }
+
+        calc.dividid = function () {
+            return this.x / this.y;
+        }
+
+        calc.result = function () {
+
+            var value1 = this.plus();
+            var value2 = this.minus();
+            var value3 = this.mutiple();
+            var value4 = this.dividid();
+
+            //출력
+            document.write("<h1>덧셈 결과 :" + value1 + "</h1>");
+            document.write("<h1>뺄셈 결과 :" + value2 + "</h1>");
+            document.write("<h1>곳셈 결과 :" + value3 + "</h1>");
+            document.write("<h1>나눗셈 결과 :" + value4 + "</h1>");
+
+        }
+
+        calc.setValue(100, 50);
+        calc.result();
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <!--
+    자바스크립트의 내장 객체 
+    값의  처리하기 위한 내장 객체 
+    Date, Array, String, Math
+    
+
+    브라우저를 제어하기 위한 내장 객체 
+    window, location, history, screen, navigator
+
+
+    HTML문서를  제어하기 위한 내장 객체
+    document, image, form, frame 
+    
+
+
+
+-->
+
+
+
+
+</body>
+
+</html>

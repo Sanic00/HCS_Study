@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배치</title>
+    <style>
+        div {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            border: 1px solid lightgreen;
+            text-align: center;
+            color: wheat;
+            background-color: tomato;
+        }
+
+        #down:hover {
+            position: relative;
+            left: 20px;
+            top: 20px;
+            background: green;
+        }
+
+        #up:hover {
+            position: relative;
+            right: 20px;
+            bottom: 20px;
+            background: green;
+        }
+
+        #up:hover {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            background: green;
+        }
+
+        #down:hover {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background: green;
+        }
+
+        #id {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            padding: 5px;
+            background: red;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>배치</h3>
+    <hr color="red">
+    <div id="down">T</div>
+    <div>h</div>
+    <div>a</div>
+    <div>n</div>
+    <div id="up">k</div>
+    <div>s</div>
+
+    <br>
+    <hr>
+    <img src="../img/border.png" alt="" width="300">
+    <div id="fixed">보더</div>
+
+</body>
+
+</html>

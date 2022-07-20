@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀렉터</title>
+
+    <style>
+        /* 두 태그의 동시에 css를 입힌다 */
+        h3,
+        li {
+            color: brown;
+        }
+
+        div>div>strong {
+            /* background 와 background color차이점은 
+            background은 특정태그안에만 색을 입히는거고
+            background color은 전체 색을 입힌다. */
+            background: yellow;
+        }
+
+        ul strong {
+            color: blue;
+        }
+
+        .warning {
+            color: red;
+        }
+
+        body .main {
+            background: green;
+        }
+
+        #list {
+            background: black;
+        }
+
+        #list span {
+            color: forestgreen;
+        }
+
+        /* 가상 클래스를 이용해서 색을 입힐수 있다. */
+        h3::first-letter {
+            color: pink;
+
+        }
+
+        li:hover {
+            background: lemonchiffon;
+        }
+    </style>
+</head>
+
+<body class="main">
+    <h3>Web Programming</h3>
+    <hr>
+    <div>
+        <div>20200년 IT1기 2학기 <strong>학습내용</strong>공지</div>
+        <ul id="list">
+            <li><span>Html</span></li>
+            <li><strong>Css</strong></li>
+            <li>JavaScript</li>
+            <li><span>JSP</span></li>
+        </ul>
+
+        <div class="warning">월 평가 60점 이하는 F</div>
+    </div>
+
+
+
+</body>
+
+</html>
