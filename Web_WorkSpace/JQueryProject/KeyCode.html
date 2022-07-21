@@ -13,6 +13,7 @@
         // 키 코드 값을 파라미터로 받아서 키보드의 이름을 리턴하는 함수 
         function getKeyName(keyCode) {
             //키 코드 버튼 이름을 JSON 배열로 정의함 
+
             var keyMap = [
                 { code: 8, name: "backspace" },
                 { code: 9, name: "tab" },
@@ -22,7 +23,8 @@
                 { code: 18, name: "alt" },
                 { code: 19, name: "pausebreak" },
                 { code: 20, name: "capslock" },
-                { code: 21, name: "Eng/Han" },
+                { code: 209, name: "한글/漢字" },
+                { code: 210, name: "한글" },
                 { code: 25, name: "漢字" },
                 { code: 27, name: "esc" }
             ];
@@ -42,7 +44,7 @@
             $("#input > input[type='text']").keydown(
                 function (e) {
                     //이는 event 객체 내장객체임
-                    $("#result").html(e.which + "번 키 눌러짐 &gt; &get;" + getKeyName(e.which));
+                    $("#result").html(e.which + "번 키 눌러짐 &gt; &gt;" + getKeyName(e.which));
 
                 });
 

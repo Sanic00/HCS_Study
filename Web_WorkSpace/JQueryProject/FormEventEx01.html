@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 이벤트</title>
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/event.css">
+
+    <script>
+        $(function () {
+            // id 속성이 join인 <form>태그 안의 submit 버튼을 누른경우 
+            $("#join").submit(function () {
+                // 아이디 입력 검사 
+                //$(input요소).val() : input [] 태그안에 사용자가 입력한 값을 리턴 
+                var user_id = $("input[name = 'user_id']").val();
+
+
+            })
+
+
+
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+    <h1>회원가입</h1>
+    <form name="form1" id="join">
+        <div id="input">
+            <!-- 입력 박스 -->
+
+            <h3>아이디</h3>
+
+            <input type="text" name="user_id"></input>
+
+            <!-- 라디오 버튼 -->
+
+            <h3>비밀번호</h3>
+
+            <input type="password" name="user_pw">
+
+            <h3>주민번호</h3>
+            <input type="password" name="juminno">
+
+
+            <h3>성별</h3>
+            <label><input type="radio" name="gender" value="M">남자</label>
+            <label><input type="radio" name="gender" value="F">여자</label>
+
+            <h3>이메일</h3>
+            <input type="email" name="email">
+
+            <h3>URL</h3>
+            <input type="url" name="url">
+
+
+            <h3>핸드폰번호</h3>
+            <input type="tel" name="hpn">
+
+
+            <h3>취미</h3>
+            <label><input type="checkbox" name="hobby" value="연주">연주</label>
+            <label><input type="checkbox" name="hobby" value="노래">노래</label>
+            <label><input type="checkbox" name="hobby" value="합주">합주</label>
+
+
+            <h3>직업</h3>
+
+            <select name="job">
+                <option value="디자인">---웹 디자이너---</option>
+                <option value="프로그래머">---프로그래머---</option>
+                <option value="퍼블리셔">---웹퍼블리싱---</option>
+                <option value="기획">---웹기획자---</option>
+            </select>
+
+            <input type="submit" value="회원가입" class="myButton">
+            <input type="reset" value="다시작성" class="myButton">
+        </div>
+
+    </form>
+</body>
+
+</html>
