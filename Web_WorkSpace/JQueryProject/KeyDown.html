@@ -7,8 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/event.css">
 
     <script>
+        $(function () {
+            // 키가 눌러졌을때 카운트 변수 선언
+            var down_count = 0;
+
+
+            //키가 떨어졌을때 카운트 변수 선언
+            var up_count = 0;
+
+            $("#input > input[type='text']").keydown(
+                //기능
+                function () {
+                    //키가 한번 눌렀을때 down_count 변수를 증가시킨다
+                    down_count++;
+                    $("#result").html("down_count:" + down_count + "/ up_count :" + up_count);  //증가시킨 변수를 result로 보냄
+
+                });
+
+            $("#input > input[type='text']").keyup(
+                //기능
+                function () {
+                    //키가 한번 눌렀을때 down_count 변수를 증가시킨다
+                    up_count++;
+                    $("#result").html("down_count:" + down_count + "/ up_count :" + up_count);  //증가시킨 변수를 result로 보냄
+
+                });
+        });
+
+
 
 
 
