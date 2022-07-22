@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <title>Jquery Animation</title>
+
+    <!-- <script>
+
+        $(function () {
+            // 첫번째 input 버튼을 누른경우
+            // :eq(n) 은 특정 셀렉터가 여러개의 복수 요소를 지정할 경우
+            // 그중에서 하나만 지정하는 경우 사용하는 전용 셀렉터다 
+            // n값은 0부터 카운터 된다
+            $("#sh > input:eq(0)").click(function () {
+                $("#sh > div").show(2000);
+            });
+            // 두번째 버튼
+            $("#sh > input:eq(1)").click(function () {
+                $("#sh > div").hide(200);
+            });
+            // 세번째 버튼 토글버튼 -한번누르면 나타나고 한번 누르면 없어진다.
+            $("#sh > input:eq(2)").click(function () {
+                $("#sh > div").toggle(200);
+            });
+        });
+
+
+
+
+    </script> -->
+
+
+    <!-- <script>
+        //fade를 사용해서 애니메이션 효과를 준거다.
+        $(function () {
+            $("#sh > input:eq(0)").click(function () {
+                $("#sh > div ").fadeIn(5000);
+            });
+
+
+            $("#sh > input:eq(1)").click(function () {
+                $("#sh > div ").fadeOut(5000);
+            });
+
+
+            $("#sh > input:eq(2)").click(function () {
+                $("#sh > div ").fadeToggle(5000);
+            });
+        });
+
+
+    </script> -->
+
+
+    <script>
+        //slide
+        $(function () {
+            $("#sh > input:eq(0)").click(function () {
+                $("#sh > div ").slideDown(500);
+            });
+
+
+            $("#sh > input:eq(1)").click(function () {
+                $("#sh > div ").slideUp(500);
+            });
+
+
+            $("#sh > input:eq(2)").click(function () {
+                $("#sh > div ").slideToggle(500);
+            });
+        });
+
+
+    </script>
+
+
+</head>
+
+<body>
+    <h1>show/hide</h1>
+    <div id="sh">
+        <input type="button" value="보이기">
+        <input type="button" value="숨기기">
+        <input type="button" value="토글">
+
+        <div>
+            <img src="../img/1.jpg" width="300px" height="200px">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
