@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../css/scroll.css">
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                $("#console").html("스크롤이 이동 되었습니다.");
+                setTimeout(function () {
+                    //1.5초 후에 div id가 console을 내용을 지우게 한다.
+                    $("#console").html("");
+                }, 1500); //밀리세컨드로 시간을 설정 가능 1.5초 = 1500
+
+
+
+            });
+        });
+
+
+
+    </script>
+
+</head>
+
+<body>
+    <div class="gradientStyle">
+        <h1>스크롤 이벤트</h1>
+        <div id="console"></div>
+
+
+
+    </div>
+</body>
+
+</html>
